@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: url('./assets/images/portCV.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.button {
+  color: black;
+  box-shadow: 0 0 20px 20px white inset, 0 0 1px 1px black;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 white inset, 0 0 2px 2px black;
+    color: black;
+  }
+}
+.text-color {
+  color: #22552f;
+}
+
+.size{
+  font-size: medium;
+}
+

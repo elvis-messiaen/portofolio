@@ -1,0 +1,38 @@
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: normal;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.conteneur {
+  padding-top: 20px;
+  margin-left: 800px;
+  margin-right: 100px;
+
+}
+.gauch{
+  display: inline-flex;
+  justify-content: flex-start;
+
+}
+
+.row{
+  flex-direction: row;
+}
+
+.port{
+  margin-left: 20px;
+}
+
+.cont {
+  display: contents;
+}
+
+.accuei {
+  font-size: 24px;
+  margin: 0 0 16px 20px;
+  text-decoration: none;
+}

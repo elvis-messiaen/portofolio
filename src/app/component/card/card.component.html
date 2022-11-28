@@ -1,0 +1,27 @@
+<div>
+  <div  class="container d-flex flex-row justify-content-between flex-wrap text-color">
+    <div *ngFor="let produit of produits; let id = index " class="mb-5">
+      <div class="card mt-5 card_form" style="width: 25rem;">
+        <div class="card-body" style=" height:600px">
+          <img *ngIf="produit.image" [src]="produit.image" alt="image du produit"
+               class="img-thumbnail h-50 card-img-top mt-2 mb-3" style="height:300px">
+          <div class="d-flex flex-row">
+            <p class="h5 fw-bold">Framework / Langage : </p>
+            <p class="card-title h5 ms-3">{{produit.categorie}} </p>
+          </div>
+
+          <div class="d-flex flex-row">
+            <p class="h5 colorTexte">Date de mise en ligne : </p>
+            <p class="card-title h5 ms-3">{{produit.date | date: 'dd/MM/yyyy'}} </p>
+          </div>
+          <p class="card-text text-center h4">{{ produit.nom}}</p>
+          <p class="card-text text-dark size ex1">{{produit.description}}</p>
+          <a [routerLink]="[ '/produits', produit.id ]" class="btn button rounded mb-3 mt-5 my-auto ">Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

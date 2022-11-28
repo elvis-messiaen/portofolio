@@ -1,0 +1,11 @@
+.cardFormulaire {
+  margin-bottom: 300px;
+  &:hover {
+    box-shadow: 0 0 10px 0 white inset, 0 0 2px 2px black;
+    color: black;
+  }
+}
+.pbFormulaire {
+
+  margin-bottom: 2000px;
+}

@@ -1,0 +1,14 @@
+.entete{
+  padding-top: 15px;
+  font-size: 16px;
+  text-align: center;
+  max-height: 150px;
+  &:hover {
+    box-shadow: 0 0 10px 0 white inset, 0 0 2px 2px black;
+    color: black;
+  }
+}
+
+.lienPDF{
+  text-decoration: none;
+}
